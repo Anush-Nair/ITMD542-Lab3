@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="tipheader">Tip Calculator</h1>
+        <div class="container">
+            <div class="tipbox">
+                <div class="tiphint">
+                    <h2>This is a tip calculator. Enter your bill amount and move the slider to adjust the tip percentage.</h2>
+                </div>
+                <div class="tipamount">
+                    <form>
+                        <p>How much was your bill?</p>
+                        <input id="billamt" type="text" placeholder="Bill Amount">
+                        <div class="calculator__row">
+                            <label for="tip">tip amount: <span class="tip-amount"></span></label>
+                            <input type="range" min="0" max="100" value="0" step="1" class="calculator__tip" id="tip" required/>
+                        </div>
+                        <div class="calculator__row">
+                            <h2 class="calculator__info">tip to leave: <span class="calculator__result"></span></h2>
+                        </div>
+                    
+                    
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+<!--               
+                        <p>How was your service?
+                          <p>
+                            <select id="serviceQual">
+                          <option disabled selected value="0">-- Choose an Option --</option>
+                          <option value="0.3">30&#37; &#45; Outstanding</option>
+                          <option value="0.2">20&#37; &#45; Good</option>
+                          <option value="0.15">15&#37; &#45; It was OK</option>
+                          <option value="0.1">10&#37; &#45; Bad</option>
+                          <option value="0.05">5&#37; &#45; Terrible</option>
+                      </select>
+               -->

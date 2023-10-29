@@ -16,26 +16,33 @@
                 </div>
                 <div class="tipamount">
                     <form id="tipCalculatorForm">
-                        <label for="billTotal">Bill Total:</label>
-                        <input type="text" id="billTotal" placeholder="Enter total bill" required>
-                        <br>
-                
-                        <label for="tipPercentage">Tip Percentage:</label>
+                        <div class="billwrapper">
+                            <label for="billTotal">Bill:</label>
+                            <input type="number" min="1" id="billTotal" placeholder="Enter total bill" required>
+                            <input type="button" onclick="clearFunction()" value="Clear">
+                            <br>
+                        </div>    
+                        <!-- <label for="tipPercentage">Tip Percentage:</label>
                         <input type="text" id="tipPercentage" disabled>
-                        <br>
-                
-                        <label for="tipSlider">Tip (%):</label>
-                        <input type="range" id="tipSlider" min="0" max="100">
-                        <br>
-                
-                        <label for="tipAmount">Tip Amount:</label>
-                        <input type="text" id="tipAmount" disabled>
-                        <br>
-                
-                        <label for="totalWithTip">Total Bill with Tip:</label>
-                        <input type="text" id="totalWithTip" disabled>
+                        <br> -->
+                        <div class="tipwrapper">   
+                            <label for="tipSlider">Tip:</label>
+                            <input type="range" id="tipSlider" min="0" max="100" value="0">
+                            <input type="text" id="tipPercentage" disabled value="0%">
+                            <br>
+                        </div> 
+                        <div class="tipAmtWrapper">
+                            <label for="tipAmount">Tip Amount:</label>
+                            <input type="text" id="tipAmount" disabled>
+                            <br>
+                        </div>
+                        <div class="totalWrapper">
+                            <label for="totalWithTip">Total Bill with Tip:</label>
+                            <input type="text" id="totalWithTip" disabled>
+                        </div>
                     </form>
                 </div>
+                <p class="lablabel">ITMD-541 - Lab3 - Anush B Nair</p>
             </div>
         </div>
     </div>

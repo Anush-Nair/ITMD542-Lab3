@@ -7,6 +7,10 @@ const totalWithTipInput = document.getElementById('totalWithTip');
 
 form.addEventListener('input', updateTipCalculator);
 
+function clearFunction() {
+    document.getElementById("tipCalculatorForm").reset();
+  }
+
 function updateTipCalculator() {
     const billTotal = parseFloat(billTotalInput.value);
     const tipPercentage = parseInt(tipSliderInput.value);

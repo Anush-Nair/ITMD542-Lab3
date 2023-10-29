@@ -1,3 +1,14 @@
+var loaderVar;
+
+function loaderFunc() {
+  loaderVar = setTimeout(showPage, 1000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+}       
+
+
 const form = document.getElementById('tipCalculatorForm');
 const billTotalInput = document.getElementById('billTotal');
 const tipPercentageInput = document.getElementById('tipPercentage');

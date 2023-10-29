@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tip Calculator</title>
     <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
 </head>
-<body>
-    <div class="wrapper">
+<body onload="loaderFunc()" style="margin:0;">
+<div id="loader"></div>
+    <div class="wrapper" id="wrapper">
         <h1 class="tipheader">Tip Calculator</h1>
         <div class="container">
             <div class="tipbox">
@@ -46,6 +48,6 @@
             </div>
         </div>
     </div>
-<script src="script.js"></script>
+
 </body>
 </html>

@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tip Calculator</title>
     <link href="style.css" rel="stylesheet">
-    <script src="script.js"></script>
 </head>
 <body onload="loaderFunc()" style="margin:0;">
 <div id="loader"></div>
@@ -13,9 +12,6 @@
         <h1 class="tipheader">Tip Calculator</h1>
         <div class="container">
             <div class="tipbox">
-                <div class="tiphint">
-                    <!-- <h2>Enter your bill amount and move the slider to adjust the tip percentage.</h2> -->
-                </div>
                 <div class="tipamount">
                     <form id="tipCalculatorForm">
                         <div class="billwrapper">
@@ -24,30 +20,27 @@
                             <input type="button" onclick="clearFunction()" value="Clear">
                             <br>
                         </div>    
-                        <!-- <label for="tipPercentage">Tip Percentage:</label>
-                        <input type="text" id="tipPercentage" disabled>
-                        <br> -->
                         <div class="tipwrapper">   
                             <label for="tipSlider">Tip:</label>
-                            <input type="range" id="tipSlider" min="0" max="100" value="0">
+                            <input type="range" id="tipSlider" min="0" max="100" value="0" placeholder="Slide to set tip %">
                             <input type="text" id="tipPercentage" disabled value="0%">
                             <br>
                         </div> 
                         <div class="tipAmtWrapper">
-                            <label for="tipAmount">Tip Amount:</label>
-                            <input type="text" id="tipAmount" disabled>
+                            <label for="tipAmount" id="tipAmountLabel">Tip Amount:</label>
+                            <input type="text" id="tipAmount" placeholder="Tip to pay" disabled>
                             <br>
                         </div>
                         <div class="totalWrapper">
                             <label for="totalWithTip">Total Bill with Tip:</label>
-                            <input type="text" id="totalWithTip" disabled>
+                            <input type="text" id="totalWithTip" placeholder="Bill including tip" disabled>
                         </div>
                     </form>
                 </div>
-                <p class="lablabel">ITMD-541 - Lab3 - Anush B Nair</p>
+                <a class="lablabel" href="https://github.com/Anush-Nair/ITMD542-Lab3" target="_blank">ITMD-541 - Lab3 - Anush B Nair - Click here for Git Repo</a>
             </div>
         </div>
     </div>
-
+    <script src="script.js"></script>
 </body>
 </html>
